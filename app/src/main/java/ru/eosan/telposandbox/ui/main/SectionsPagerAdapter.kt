@@ -6,11 +6,13 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import ru.eosan.telposandbox.R
 import ru.eosan.telposandbox.ui.main.ledScreen.LedFragment
+import ru.eosan.telposandbox.ui.main.proximitySensorScreen.ProximitySensorFragment
 import ru.eosan.telposandbox.ui.main.relayScreen.RelayFragment
 
 private val TAB_TITLES = arrayOf(
     R.string.tab_led,
-    R.string.tab_relay
+    R.string.tab_relay,
+    R.string.tab_proximity_sensor
 )
 
 /**
@@ -26,6 +28,7 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager) :
         return when (position) {
             0 -> LedFragment()
             1 -> RelayFragment()
+            2 -> ProximitySensorFragment()
             else -> throw IllegalArgumentException("Illegal Tab with position: $position")
         }
     }
