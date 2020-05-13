@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">TelpoSandbox</string>
     <string name="tab_led">Led</string>
-    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_relay">Relay</string>
 </resources>

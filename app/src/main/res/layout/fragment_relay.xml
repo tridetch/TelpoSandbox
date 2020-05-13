@@ -10,49 +10,36 @@
     tools:context=".ui.main.relayScreen.RelayFragment">
 
     <TextView
-        android:id="@+id/ledStatusLabel"
+        android:id="@+id/relayStatusLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-        tools:text="Выключен" />
+        tools:text="Закрыто" />
 
     <Button
-        android:id="@+id/turnOnLedButton"
+        android:id="@+id/openRelayButton"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Включить" />
+        android:text="Открыть" />
 
     <Button
-        android:id="@+id/turnOffLedButton"
+        android:id="@+id/closeRelayButton"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:text="Выключить" />
+        android:text="Закрыть" />
 
     <Button
-        android:id="@+id/toggleLedButton"
+        android:id="@+id/toggleRelayButton"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:text="Переключить" />
 
-    <CheckBox
-        android:id="@+id/autoPowerCheckBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Авто питание" />
-
-    <SeekBar
-        android:id="@+id/brightnessSeekBar"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="4dp" />
-
     <Button
-        android:id="@+id/updateLedStatus"
+        android:id="@+id/updateRelayStatus"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -60,7 +47,7 @@
         android:text="Обновить статус" />
 
     <TextView
-        android:id="@+id/ledLogTextView"
+        android:id="@+id/relayLogTextView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="32dp"
